@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %md
 # MAGIC # 06 · Recommendations (pandas + optional AI wording)
 # MAGIC Turns Gold + Insight tables into **3–5 plain-English insights per client, each with an action**,
