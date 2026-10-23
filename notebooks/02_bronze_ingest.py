@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %md
 # MAGIC # 02 · Bronze — Incremental Ingestion with Auto Loader (PySpark)
 # MAGIC Raw files → Delta tables, **as-is** (every column kept as string) plus lineage metadata.
@@ -72,3 +76,8 @@ display(
     .filter("amount LIKE '$%' OR amount LIKE '-%' OR invoice_date LIKE '%/%'")
     .limit(10)
 )
+
+# COMMAND ----------
+
+# MAGIC    %sql
+# MAGIC    DESCRIBE HISTORY workspace.tradebooks.bronze_jobs

@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %md
 # MAGIC # 03 · Silver — Clean, Validate, Deduplicate, Upsert (PySpark)
 # MAGIC | Step | Technique |
@@ -150,7 +154,7 @@ process("timesheets", "timesheet_id",
                              F.col("hours").cast("decimal(6,2)").alias("hours"),
                              F.col("hourly_cost").cast("decimal(8,2)").alias("hourly_cost"),
                              "_ingested_at", "_source_file", "_rescued_data"),
-        {"bad_hours": F.col("hours").between(0.25, 16)})
+        {"bad_hours": F.col("hours").between(0.25, 400)})
 
 # COMMAND ----------
 

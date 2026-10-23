@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %md
 # MAGIC # 04 · Gold — Business-Ready Marts (PySpark)
 # MAGIC The tables a contractor (or the bookkeeping firm) actually looks at.

@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %md
 # MAGIC # 05 · Analytics & Insights (pandas)
 # MAGIC Gold tables are small and aggregated, so we pull them into **pandas** for analysis.

@@ -1,4 +1,8 @@
 # Databricks notebook source
+# /// script
+# [tool.databricks.environment]
+# environment_version = "6"
+# ///
 # MAGIC %md
 # MAGIC # 01 · Generate Source Data (pandas)
 # MAGIC Simulates raw exports from the bookkeeping systems of **trade-contractor clients**
